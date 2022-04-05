@@ -24,7 +24,6 @@ header {
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 120px 70px 70px;
-    height: 100vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
