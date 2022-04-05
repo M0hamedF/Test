@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -84,7 +83,6 @@ body.items {
     }
 }
 
-/* /////////////////////////////////// */
 /* Products-body */
 main.items h4 {
     margin: -30px 30px;
