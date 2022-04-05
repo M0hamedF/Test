@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+:root {
+    --clr-f: rgb(208, 9, 9);
+    overflow-x: hidden;
+}
+
+body.items {
+    background-color: black;
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* Side Bar */
+.sidebar {
+    text-transform: uppercase;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: var(--clr-f);
+
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 50px;
+}
+
+.openbtn:hover {
+    color: var(--clr-f);
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+/* /////////////////////////////////// */
+/* Products-body */
+main.items h4 {
+    margin: -30px 30px;
+    color: white;
+}
+
+main.items {
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
+}
+
+h1 {
+    color: white;
+    margin: 0 50px -10px;
+}
+
+.items_products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.items_product {
+    display: grid;
+    text-align: center;
+    border: solid;
+    border-width: 0.1px;
+    max-width: 330px;
+    min-height: 390px;
+    border-color: rgb(98, 81, 81, 0.5);
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.items_product:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+    transition: 0.3;
+    background-color: #2b2c2d;
+}
+
+.items_product img {
+    max-width: 260px;
+    border-radius: 20px;
+}
+
+.items_product p {
+
+    font-size: 17px;
+    color: var(--clr-f);
+    letter-spacing: 2px;
+}

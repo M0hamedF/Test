@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style-sign.css">
+    <link rel="shortcut icon" href="assets/img/mouse-clicker.png" type="image/x-icon">
+    <title>Registration</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <main class="sign-up">
+            <div class="title">
+                <h2>Create Account</h2>
+            </div>
+            <div class="flex">
+                <label for="name">Name</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="flex">
+                <label for="email">Email</label>
+                <input type="email" placeholder="whatever@example.com" name="email" required>
+            </div>
+            <div class="flex">
+                <label for="password">Password</label>
+                <input type="password" placeholder="At least 8 characters" name="password" minlength="8" required>
+            </div>
+            <div class="flex">
+                <label for="phoneNumber">Phone number</label>
+                <input type="number" name="phoneNumber" minlength="11" required>
+            </div>
+            <div class="flex">
+                <label for="country">Country</label>
+                <select name="country" id="country" required>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <div class="signup">
+                    <button type="submit">SIGN UP</button>
+                </div>
+            </div>
+            <div class="redirect_Signin">
+                <p>Already have an account? <a href="sign-in.html">Sign-In</a></p>
+            </div>
+        </main>
+    </form>
+</body>
+
+</html>

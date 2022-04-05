@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+body {
+    background: url(../../assets/img/keyboards\ razer.jpg);
+    background-position: fixed;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    place-items: center;
+}
+
+main.sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
+    min-width: 250px;
+    margin-top: 75px;
+    background-color: rgb(28, 27, 27);
+    padding: 50px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+main.sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 410px;
+    min-width: 250px;
+    margin-top: 75px;
+    background-color: rgb(28, 27, 27);
+    color: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 200px;
+    font-weight: 500;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+input, select {
+    border-radius: 3px;
+    padding: 5px;
+    border-color: #007bff;
+}
+
+.signin button {
+    background-color: #007bff;
+    color: aliceblue;
+    padding: 7px;
+    border-radius: 5px;
+    width: 30%;
+    border-color: #007bff;
+    transition: 0.3s;
+}
+.signup button {
+    background-color: #007bff;
+    color: aliceblue;
+    padding: 7px;
+    border-radius: 5px;
+    width: 30%;
+    margin-top: 10px;
+    border-color: #007bff;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #125399;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.redirect_Signin {
+    font-size: 13px;
+}
+
+.redirect_Signin a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.redirect_Signin a:hover {
+    color: rgb(208, 9, 9);
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+@media(max-width:500px) {
+    main {
+        margin: 75px 30px;
+        background-color: aliceblue;
+        min-width: 200px;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .title{
+        font-size: 14.5px;
+    }
+}
