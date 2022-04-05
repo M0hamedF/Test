@@ -11,11 +11,13 @@
     --clr-f: rgb(208, 9, 9);
     overflow-x: hidden;
 }
-body{
+
+body {
     background-color: black;
     color: white;
     font-family: 'Permanent Marker', cursive;
 }
+
 .categories-page-hero {
     background-image: url(../img/2098486.jpg);
     background-position: fixed;
@@ -30,7 +32,8 @@ body{
 
 .categories-page-hero h1 {
     color: var(--clr-f);
-    font-size: 10vw;
+    font-size: 11vw;
+    margin-top: 50px;
 }
 
 .categories-page-body {
@@ -55,6 +58,7 @@ body{
     transition: 0.3s;
     padding: 10px;
 }
+
 .categories-page-body-item:hover {
     transform: scale(1.04);
     cursor: pointer;
@@ -62,6 +66,25 @@ body{
     background-color: #2b2c2d;
     color: var(--clr-f);
 }
+
 .categories-page-body-item img {
     max-width: 250px;
+}
+
+@media(max-width: 800px) {
+    .categories-page-hero h1 {
+        font-size: 13vw;
+    }
+    .categories-page-hero {
+        height: 40vh;
+    }
+}
+@media(max-width: 500px) {
+    .categories-page-hero h1 {
+        font-size: 11vw;
+        padding: 0px;
+    }
+    .categories-page-hero {
+        height: 30vh;
+    }
 }
