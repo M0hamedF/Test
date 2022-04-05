@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -83,11 +84,12 @@ body.items {
     }
 }
 
+/* /////////////////////////////////// */
 /* Products-body */
-main.items h4 {
+/* main.items h4 {
     margin: -30px 30px;
-    color: white;
-}
+    color: var(--clr-fp)
+} */
 
 main.items {
     text-transform: uppercase;
@@ -118,14 +120,39 @@ h1 {
     min-height: 390px;
     border-color: rgb(98, 81, 81, 0.5);
     transition: 0.3s;
-    padding: 10px;
+    padding: 15px;
+    justify-items: center;
 }
 
 .items_product:hover {
-    transform: scale(1.04);
+    /* transform: scale(1.04); */
     cursor: pointer;
-    transition: 0.3;
-    background-color: #2b2c2d;
+    /* transition: 0.3; */
+    /* background-color: #2b2c2d; */
+}
+
+.items_product button {
+    font-size: 11px;
+    font-weight: 700;
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    width: 90%;
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: 0.3s;
+    letter-spacing: 3px;
+    box-shadow: 0 4px 8px 0 rgba(122, 117, 117, 0.2), 0 6px 20px 0 rgba(180, 164, 164, 0.19);
+    font-family: 'Permanent Marker', cursive;
+}
+.items_product button:hover {
+    
+    transition: 0.3s;
+    cursor: pointer;
+    /* transform: scale(1.1); */
+    background-color: #125399;
+    border-color: #125399;
+    border-radius: 10px;
 }
 
 .items_product img {
@@ -134,8 +161,11 @@ h1 {
 }
 
 .items_product p {
-
     font-size: 17px;
-    color: var(--clr-f);
     letter-spacing: 2px;
+}
+.items_product h4 {
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: var(--clr-f);
 }
