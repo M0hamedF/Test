@@ -84,12 +84,13 @@ pre {
 .hero button {
     font-size: 15px;
     font-weight: 700;
-    background-color: #007bff;
+    /* background-color: #007bff;
+    border-color: #007bff; */
     color: aliceblue;
+    background-color: #000000;
     padding: 15px;
     border-radius: 10px;
-    width: 20%;
-    border-color: #007bff;
+    width: 20%; 
     transition: 0.3s;
     margin-top: 10px;
     letter-spacing: 3px;
@@ -97,11 +98,12 @@ pre {
 }
 
 .hero button:hover {
-    background-color: #125399;
+    /* background-color: #125399;
+    border-color: #125399; */
+    background-color: rgb(208, 9, 9);
     transition: 0.3s;
     cursor: pointer;
     transform: scale(1.1);
-    border-color: #125399;
     border-radius: 10px;
 }
 
@@ -225,7 +227,7 @@ pre {
 /* Categories */
 .landing-body {
     text-align: center;
-    margin: 0 50px 70px;
+    margin: 55px 50px 70px;
 }
 
 .top h1 {
