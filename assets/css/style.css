@@ -32,7 +32,7 @@ header {
 }
 
 .image img {
-    width: 80%;
+    width: 100%;
     position: relative;
     animation: MoveUpDown 2s linear infinite;
 }
