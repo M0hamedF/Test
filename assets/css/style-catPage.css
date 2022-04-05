@@ -25,7 +25,6 @@ body {
     background-size: cover;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.7);
-    height: 50vh;
     text-align: center;
     padding: 100px;
 }
@@ -75,16 +74,10 @@ body {
     .categories-page-hero h1 {
         font-size: 13vw;
     }
-    .categories-page-hero {
-        height: 40vh;
-    }
 }
 @media(max-width: 500px) {
     .categories-page-hero h1 {
         font-size: 11vw;
         padding: 0px;
-    }
-    .categories-page-hero {
-        height: 30vh;
     }
 }
