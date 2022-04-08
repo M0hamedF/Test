@@ -6,50 +6,277 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/img/mouse-clicker.png" type="image/x-icon">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/style-item.css">
+  <link rel="stylesheet" href="assets/css/style-footerHeader.css">
+
   <title>item-details</title>
 </head>
 
-<body class="details">
+<body>
+  <header>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">HOME</a></li>
+        <div class="dropdown">
+          <li>Categories</li>
+          <div class="dropdown-content">
+            <a href="categories.html">Desktop</a>
+            <a href="categories.html">Gaming Gear</a>
+            <a href="categories.html">Storage</a>
+            <a href="products.html">Monitors</a>
+            <a href="products.html">Laptops</a>
+          </div>
+        </div>
+        <li><a href="#top">Top Products</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="sign/sign-in.html">Sign-in</a></li>
+      </ul>
+    </nav>
+  </header>
   <main class="item-details">
-    <section class="item-header">
-      <img
-        src="https://static.gigabyte.com/StaticFile/Image/Global/692421b72f3f4900b20ce8a772ab2ebf/Product/29154/webp/300"
-        alt="">
+    <section class="details">
+      <section class="details-images">
+        <div class="main-image">
+          <img src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png" alt="">
+        </div>
+        <div class="sec-image">
+          <img src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png" alt="">
+          <img src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png" alt="">
+          <img src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png" alt="">
+          <img src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png" alt="">
+          <img src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png" alt="">
+        </div>
+      </section>
+      <article>
+        <h1>amd-ryzen-9-5950x</h1>
+        <h2>
+          Specifications
+        </h2>
+        <p>
+          # of CPU Cores :<span>16</span>
+        </p>
+        <p>
+          # of Threads <span>32</span>
+        </p>
+        <p>
+          Max. Boost Clock <span>Up to 4.9GHz</span>
+        </p>
+        <p>
+          Base Clock <span>3.4GHz</span>
+        </p>
+        <p>
+          L2 Cache <span>8MB</span>
+        </p>
+        <p>
+          L3 Cache <span>64MB</span>
+        </p>
+        <p>
+          Default TDP <span>105W</span>
+        </p>
+        <p>
+          CPU Socket <span> AM4</span>
+        </p>
+        <hr>
+        <h4>PRICE :<Span> 7500$</Span></h4>
+        <button class="cart">Add To Cart</button>
+      </article>
     </section>
-    <article>
-      <h1>MEG Aegis Ti5 12th</h1>
-      <p>
-        OPERATING SYSTEM : Windows 11
-      </p>
-      <p>
-        CPU : Intel® Core™ i9-12900K Processor <br>
-      <pre>      Intel® Core™ i7-12700K Processor</pre>
-      </p>
-      <p>
-        CHIPSET : Intel® Z690
-      </p>
-    </article>
+    <hr>
+    <section class="reviews">
+      <h1>Reviews</h1>
+      <article class="container">
+        <div class="flex">
+          <div class="title f-color">
+            <h5>Daniel Clifford<br>
+              <span>Verified Customer</span>
+            </h5>
+          </div>
+        </div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p class="rev rev-clr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+          has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+          type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+          into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+          of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum.
 
+        </p>
+      </article>
+      <article class="container">
+        <div class="flex">
+          <div class="title f-color">
+            <h5>Jonathan Walters<br>
+              <span>Verified Customer</span>
+            </h5>
+          </div>
+        </div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p class="rev rev-clr">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+          has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+          type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+          into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+          of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum.
 
+          ”</p>
+      </article>
+      <article class="container">
+        <div class="flex">
+          <div class="title f-color-black">
+            <h5>Jeanette Harmon<br>
+              <span>Verified Customer</span>
+            </h5>
+          </div>
+        </div>
+        <p class="body-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p class="rev rev-clr-dark">“ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+          leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+          release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+          like Aldus PageMaker including versions of Lorem Ipsum.
 
+          ”</p>
+      </article>
+      <article class="container">
+        <div class="flex">
+          <div class="title f-color">
+            <h5>Patrick Abrams <br>
+              <span>Verified Customer</span>
+            </h5>
+          </div>
+        </div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p class="rev rev-clr">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+          has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+          type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+          into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+          of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum.
 
+          ”</p>
+      </article>
+      <article class="container">
+        <div class="flex">
+          <div class="title f-color-black">
+            <h5>Kira Whittle<br>
+              <span>Verified Customer</span>
+            </h5>
+          </div>
+        </div>
+        <p class="body-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p class="rev rev-clr-dark">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+          leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+          release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+          like Aldus PageMaker including versions of Lorem Ipsum.
 
-
-    <!-- <table>
-            <tr>
-              <th>A</th>
-              <th>B</th>
-            </tr>
-            <tr>
-              <td>C</td>
-              <td>D</td>
-            </tr>
-            <tr>
-              <td>E</td>
-              <td>F</td>
-            </tr>
-          </table> -->
+          ”</p>
+      </article>
+    </section>
+    <section>
+      <h3>Related Products</h3>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="related-items">
+              <div class="related-item">
+                <a href="item.html"><img style="max-width: 200px;" src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png"
+                    class="d-block w-100" alt="amd-ryzen-9-5950x"></a>
+                <p style="color: aliceblue;">amd-ryzen-9-5950x</p>
+              </div>
+              <div class="related-item">
+                <a href="item.html"><img style="max-width: 200px;" src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png"
+                    class="d-block w-100" alt="amd-ryzen-9-5950x"></a>
+                <p style="color: aliceblue;">amd-ryzen-9-5950x</p>
+              </div>
+              <div class="related-item">
+                <a href="item.html"><img style="max-width: 200px;" src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png"
+                    class="d-block w-100" alt="amd-ryzen-9-5950x"></a>
+                <p style="color: aliceblue;">amd-ryzen-9-5950x</p>
+              </div>
+              <div class="related-item">
+                <a href="item.html"><img style="max-width: 200px;" src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png"
+                    class="d-block w-100" alt="amd-ryzen-9-5950x"></a>
+                <p style="color: aliceblue;">amd-ryzen-9-5950x</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="related-items">
+              <div class="related-item">
+                <a href="item.html"><img style="max-width: 200px;" src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png"
+                    class="d-block w-100" alt="amd-ryzen-9-5950x"></a>
+                <p style="color: aliceblue;">amd-ryzen-9-5950x</p>
+              </div>
+              <div class="related-item">
+                <a href="item.html"><img style="max-width: 200px;" src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png"
+                    class="d-block w-100" alt="amd-ryzen-9-5950x"></a>
+                <p style="color: aliceblue;">amd-ryzen-9-5950x</p>
+              </div>
+              <div class="related-item">
+                <a href="item.html"><img style="max-width: 200px;" src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png"
+                    class="d-block w-100" alt="amd-ryzen-9-5950x"></a>
+                <p style="color: aliceblue;">amd-ryzen-9-5950x</p>
+              </div>
+              <div class="related-item">
+                <a href="item.html"><img style="max-width: 200px;" src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png"
+                    class="d-block w-100" alt="amd-ryzen-9-5950x"></a>
+                <p style="color: aliceblue;">amd-ryzen-9-5950x</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="related-items">
+              <div class="related-item">
+                <a href="item.html"><img style="max-width: 200px;" src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png"
+                    class="d-block w-100" alt="amd-ryzen-9-5950x"></a>
+                <p style="color: aliceblue;">amd-ryzen-9-5950x</p>
+              </div>
+              <div class="related-item">
+                <a href="item.html"><img style="max-width: 200px;" src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png"
+                    class="d-block w-100" alt="amd-ryzen-9-5950x"></a>
+                <p style="color: aliceblue;">amd-ryzen-9-5950x</p>
+              </div>
+              <div class="related-item">
+                <a href="item.html"><img style="max-width: 200px;" src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png"
+                    class="d-block w-100" alt="amd-ryzen-9-5950x"></a>
+                <p style="color: aliceblue;">amd-ryzen-9-5950x</p>
+              </div>
+              <div class="related-item">
+                <a href="item.html"><img style="max-width: 200px;" src="assets/img/amd-ryzen-9-5950x-3.4ghz-cpu.png"
+                    class="d-block w-100" alt="amd-ryzen-9-5950x"></a>
+                <p style="color: aliceblue;">amd-ryzen-9-5950x</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button style="margin-left: -100px;" class="carousel-control-prev" type="button"
+          data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button style="margin-right: -100px;" class="carousel-control-next" type="button"
+          data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
   </main>
   <footer>
     <h1>MechTech</h1>
