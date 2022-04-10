@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 * {
     margin: 0;
@@ -19,9 +20,25 @@ main {
     padding: 70px;
 }
 
+span {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.Specifications {
+    margin-top: 40px;
+}
+
+.Specifications h1,
+h2,
+h4,
+p {
+    font-family: 'Permanent Marker', cursive;
+}
+
 .details {
     display: flex;
-    font-family: 'Permanent Marker', cursive;
+    flex-wrap: wrap;
 }
 
 .details-images {
@@ -133,7 +150,8 @@ span {
 /* bootstrap */
 .carousel-item .related-items {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
 }
 
 .related-item {
@@ -142,17 +160,106 @@ span {
 
 .related-item img {
     padding: 20px;
+    max-width: 200px;
 }
 
 .carousel-inner {
     margin: 50px 0;
 }
-.reviews{
+
+.carousel-control-next {
+    margin-right: -10px;
+}
+
+.carousel-control-prev {
+    margin-left: -10px;
+}
+
+/* reviews */
+.reviews {
     padding: 30px;
 }
-.container{
+
+.container {
     background-color: #2b2c2d;
     padding: 10px;
-    margin: 15px;
     border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.reach-us p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media(max-width:1080px) {
+    main {
+        padding: 70px 20px;
+    }
+
+    .carousel-item .related-items {
+        gap: 5px;
+    }
+
+    .related-item img {
+        max-width: 150px;
+    }
+
+    .main-image img {
+        width: 100%;
+    }
+
+    .details {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* bootstrap */
+    .carousel-item .related-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carousel-control-next {
+        margin-right: -1px;
+    }
+
+    .carousel-control-prev {
+        margin-left: -1px;
+    }
+
+    .related-item p {
+        font-size: 0.9em;
+    }
+
+    .sec-image {
+        gap: 5px;
+    }
+
+    .sec-image img {
+        max-width: 15%;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media(max-width:520px) {
+    .Specifications {
+        padding: 10px;
+    }
+
+    .details-images {
+        padding: 0px;
+    }
+
+    .sec-image img {
+        max-width: 25%;
+    }
 }
