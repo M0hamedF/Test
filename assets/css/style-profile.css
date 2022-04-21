@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: hsl(180, 4%, 27%);
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    letter-spacing: 2px;
+    background-image: url(../img/keyboards\ razer.jpg);
+    background-position: fixed;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+main {
+    background-color: white;
+    border-radius: 15px;
+    width: 50%;
+    min-width: 375px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.title h1 {
+    margin-bottom: 20px;
+}
+
+.header {
+    display: grid;
+    place-items: center;
+}
+
+.profile-bg {
+    border-radius: 15px 15px 0 0;
+}
+
+.profile img {
+    margin-top: -65px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    width: 110px;
+}
+
+section .title {
+    text-align: center;
+}
+
+section .title {
+    font-size: 14px;
+}
+
+section.title p {
+    font-size: 15px;
+    margin: 10px 0 25px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.title span {
+    font-size: 20px;
+    margin-left: 4px;
+}
+
+.title span,
+.title p,
+.body span {
+    color: hsl(0, 0%, 0%);
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+section .body {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 20px;
+}
+
+.body p {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+
+}
+
+.body span {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+button {
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #007bff;
+    border-color: #007bff;
+    color: aliceblue;
+    padding: 10px 25px;
+    border-radius: 10px;
+    width: 1 0%;
+    font-family: 'Permanent Marker', cursive;
+    transition: 0.3s;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    box-shadow: 0 4px 8px 0 rgba(122, 117, 117, 0.2), 0 6px 20px 0 rgba(180, 164, 164, 0.19);
+}
+
+hr {
+    margin: 0 200px;
+}
+
+button:hover {
+    background-color: #125399;
+    border-color: #125399;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.08);
+    border-radius: 10px;
+}
+
+
+@media(max-width:980px) {
+
+    p, span {
+        font-size: 900px;
+    }
+
+    section.body {
+        width: 100%;
+    }
+}

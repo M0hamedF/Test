@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    text-decoration: none;
+
+}
+
+:root {
+    --clr-hover: rgb(208, 9, 9);
+    --clr-header: rgb(255, 255, 255);
+    --clr-sec: rgb(203, 198, 198);
+}
+
+footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 25px 100px 15px;
+    background-color: rgb(23, 22, 22);
+    bottom: 0;
+}
+
+footer h4 {
+    color: var(--clr-header);
+}
+
+footer a,
+footer p {
+    color: var(--clr-sec);
+    font-size: 13px;
+}
+
+footer a:hover {
+    color: var(--clr-hover);
+}
+
+footer .prim {
+    margin-bottom: 20px;
+}
+
+footer .info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer .column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .sec {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 15px;
+    gap: 10px;
+}
+
+@media(max-width:568px) {
+    .column a {
+        font-size: 18px;
+    }
+
+    .Policy a,
+    .copyright {
+        text-align: center;
+    }
+
+    .column h4 {
+        font-size: 22px;
+    }
+
+    footer {
+        padding: 30px 80px;
+    }
+}
