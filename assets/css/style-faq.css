@@ -11,9 +11,11 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 50px;
-    ;
-    align-items: center;
+    padding-bottom: 50px;
+    background-image: url(../img/keyboards\ razer.jpg);
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
 }
 
 .faq .container {
@@ -21,9 +23,8 @@
 }
 
 .faq .title {
-    margin-top: 70px;
+    margin: 70px 150px 10px;
     font-size: 1.8em;
-    height: 55vh;
     background-repeat: no-repeat;
 }
 
@@ -32,36 +33,29 @@
 }
 
 .faq h3 {
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
 .faq p {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
 }
-@media(max-width:800px) {
-    .faq .title img {
-        max-width: 500px;
-        margin-bottom: -250px;
-    }
-}
-@media(max-width:700px) {
-    .faq .title {
-        text-align: center;
-    }
 
+@media(max-width:700px) {
     .faq .container {
         margin: 20px 50px;
     }
+
+    .faq .title {
+        margin: 50px 50px 20px;
+    }
 }
+
 @media(max-width:550px) {
     .faq .title img {
-        max-width: 370px;
+        min-width: 370px;
         margin-bottom: -300px;
-    }
-    .faq .title {
-        margin-top: 0;
-        height:50vh;
     }
 }
