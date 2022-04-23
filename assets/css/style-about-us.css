@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+:root {
+    --clr-hover: rgb(208, 9, 9);
+    --cle-header: rgb(255, 255, 255);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    background-color: rgb(29, 28, 28);
+    color: white;
+}
+
+.about .header h1 {
+    font-size: 5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.about .header p {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin: 100px 0;
+}
+
+.article .container img {
+    margin-bottom: 17px;
+    max-width: 100%;
+}
+
+.article .container h2 {
+    margin-bottom: 7px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.article .container p {
+    max-width: 470px;
+    font-size: 16px;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team img {
+    border-radius: 50px;
+    border-style: solid;
+}
+
+.team h1 {
+    font-size: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.team .position p {
+    font-size: 16px;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.team .position h2 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+    justify-items: center;
+}
+
+.team .position {
+    max-width: 600px;
+}
+
+@media(max-width:700px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px;
+        background-color: rgb(29, 28, 28);
+        color: white;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-items: center;
+    }
+
+    .about .header h1 {
+        font-size: 3em;
+    }
+
+    .team h1 {
+        font-size: 3em;
+    }
+}
+
+/* ////////////////////// */
+footer {
+    padding: 25px 100px 15px;
+    background-color: rgb(23, 22, 22);
+    bottom: 0;
+    color: rgb(154, 148, 148);
+}
+
+footer h4 {
+    color: var(--cle-header);
+}
+
+footer a,
+p {
+    color: var(--clr-sec);
+    font-size: 13px;
+}
+
+footer a:hover {
+    color: var(--clr-hover);
+}
+
+footer .prim {
+    margin-bottom: 20px;
+}
+
+footer .info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer .column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .sec {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 15px;
+    gap: 10px;
+}
+
+@media(max-width:568px) {
+    .column a {
+        font-size: 18px;
+    }
+
+    .Policy a,
+    .copyright {
+        text-align: center;
+    }
+
+    .column h4 {
+        font-size: 22px;
+    }
+
+    footer {
+        padding: 30px 80px;
+    }
+}
